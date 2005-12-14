@@ -18,7 +18,7 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-common >= 3:4.3.0
 Requires:	php-pear-PEAR >= 1:1.0b1
-Requires:	php-pear-MDB2 >= 2.0.0beta6
+Requires:	php-pear-MDB2 >= 2.0.0-0.beta6
 Requires:	php-mssql
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
