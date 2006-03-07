@@ -14,6 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	dc6f177a8849114d4961ce0aab5eb37a
 URL:		http://pear.php.net/package/MDB2_Driver_mssql/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.3.0
 Requires:	php-mssql
