@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - mssql MDB2 driver
 Summary(pl):	%{_pearname} - sterownik mssql dla MDB2
 Name:		php-pear-%{_pearname}
-Version:	1.0.0
+Version:	1.1.0
 Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	dc6f177a8849114d4961ce0aab5eb37a
+# Source0-md5:	17922dcc2afac4fe146b7911ec2d99c1
 URL:		http://pear.php.net/package/MDB2_Driver_mssql/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
