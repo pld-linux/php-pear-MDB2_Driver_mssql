@@ -5,7 +5,7 @@
 %define		_pearname	MDB2_Driver_mssql
 
 Summary:	%{_pearname} - mssql MDB2 driver
-Summary(pl.UTF-8):   %{_pearname} - sterownik mssql dla MDB2
+Summary(pl.UTF-8):	%{_pearname} - sterownik mssql dla MDB2
 Name:		php-pear-%{_pearname}
 Version:	1.1.0
 Release:	2
