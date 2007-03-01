@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - mssql MDB2 driver
 Summary(pl):	%{_pearname} - sterownik mssql dla MDB2
 Name:		php-pear-%{_pearname}
-Version:	1.1.0
-Release:	2
+Version:	1.1.2
+Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	17922dcc2afac4fe146b7911ec2d99c1
+# Source0-md5:	8572d413bec8d09698bb7071ea2cad42
 URL:		http://pear.php.net/package/MDB2_Driver_mssql/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -20,8 +20,8 @@ BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php(mssql)
 Requires:	php-common >= 3:4.3.0
 Requires:	php-pear
-Requires:	php-pear-MDB2 >= 2.0.0-0.beta6
-Requires:	php-pear-PEAR-core >= 1:1.0b1
+Requires:	php-pear-MDB2 >= 1:2.3.0
+Requires:	php-pear-PEAR-core >= 1:1.4.0b1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -34,6 +34,20 @@ In PEAR status of this package is: %{_status}.
 Sterownik Microsoft SQL Server dla MDB2.
 
 Ta klasa ma w PEAR status: %{_status}.
+
+%package tests
+Summary:	Tests for PEAR::%{_pearname}
+Summary(pl):	Testy dla PEAR::%{_pearname}
+Group:		Development/Languages/PHP
+Requires:	%{name} = %{version}-%{release}
+AutoReq:	no
+AutoProv:	no
+
+%description tests
+Tests for PEAR::%{_pearname}.
+
+%description tests -l pl
+Testy dla PEAR::%{_pearname}.
 
 %prep
 %pear_package_setup
@@ -56,3 +70,8 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/MDB2/Driver/Reverse/mssql.php
 %{php_pear_dir}/MDB2/Driver/mssql.php
 %{php_pear_dir}/MDB2/Driver/Function/mssql.php
+%{php_pear_dir}/data/MDB2_Driver_mssql/package_mssql.xml
+
+%files tests
+%defattr(644,root,root,755)
+%{php_pear_dir}/tests/*
