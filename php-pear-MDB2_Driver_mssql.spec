@@ -4,7 +4,6 @@
 %define		_pearname	MDB2_Driver_mssql
 %define		subver	b4
 %define		rel		1
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - mssql MDB2 driver
 Summary(pl.UTF-8):	%{_pearname} - sterownik mssql dla MDB2
 Name:		php-pear-%{_pearname}
